@@ -1,18 +1,16 @@
-nums = [1,2,3]
+num = [1,2,3]
 
 result = []
-twos = []
+middle = []
 
-def subset_b(start):
-    result.append(twos[:])
+def backtrack(start):
+    result.append(middle[:])
     
-    # 재귀함수로 호출
-    for i in range(start, len(nums)):
-        if nums[i] not in twos:
-            twos.append(nums[i])
-            subset_b(i + 1)
-            
-            twos.pop()
-            
-subset_b(0)
+    for i in range(start, len(num)):
+        if num[i] not in middle:
+            middle.append(num[i])
+            backtrack(i+1)
+            middle.pop()
+
+backtrack(0)
 print(result)
