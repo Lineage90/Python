@@ -15,16 +15,11 @@
 #     st_list.append(' '.join(time))
 #     time.clear()
 
-# st_list.sort
-
+# st_list.sort()
+# print('---------')
 # for i in st_list:
 #     print(i)
 
-# for i in range(len(st_list)):
-#     h = int(st_list[i][0:2])
-#     m = int(st_list[i][2:4])
-#     s = int(st_list[i][4:6])
-#     print(h,m,s)
 
 # 2번째
 import sys
