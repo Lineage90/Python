@@ -14,7 +14,6 @@ target = 5
 # 배열 첫번째, 마지막
 row, col = 0, len(matrix[0]) - 1
 
-
 while row < len(matrix):
         # 배열에 target이 있으면 True
         if matrix[row][col] == target :
