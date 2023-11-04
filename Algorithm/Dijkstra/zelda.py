@@ -7,11 +7,12 @@
 # count = 0
 # thief = []
 
-# for _ in range(n):
-#     k = list(map(int, input().split()))
-#     thief.append(k)
-
-# start = thief[0][0]
+# while True:
+#     for _ in range(n):
+#         k = list(map(int, input().split()))
+#         thief.append(k)
+    
+#     start = thief[0][0]
 
 
 import heapq
@@ -47,7 +48,7 @@ while True:
     
     while q:
         
-        # dis = graph[x][y] 까지의 최단 경로 저장
+        # road = graph[x][y] 까지의 최단 경로 저장
         # x, y = 탐색 시작 지점의 좌표 저장
         road, x, y = heapq.heappop(q)
         
@@ -62,7 +63,7 @@ while True:
             
             # 최단 경로를 갱신
             cost = road + graph[nx][ny]
-            
+            print(cost)
             if dis[nx][ny] > cost:
                 dis[nx][ny] = cost
                 heapq.heappush(q, (cost, nx, ny))

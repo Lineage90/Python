@@ -11,4 +11,4 @@ for i in range(1,t+1):
     for j in per:
         print(''.join(j))
 
-# 재귀 사용
+
