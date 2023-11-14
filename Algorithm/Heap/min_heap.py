@@ -1,12 +1,14 @@
 import sys
 import heapq
 
+input = sys.stdin.readline
+
 n = int(input())
 
 minlst = []
 
 for _ in range(n):
-    a = int(sys.stdin.readline())
+    a = int(input())
     if a == 0:
         if minlst:
             print(heapq.heappop(minlst))
