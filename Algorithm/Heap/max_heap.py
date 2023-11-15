@@ -20,12 +20,14 @@
 import heapq
 import sys
 
+input = sys.stdin.readline
+
 n = int(input())
 
 lst = []
 
 for _ in range(n):
-    a = int(sys.stdin.readline())
+    a = int(input())
     if a == 0:
         if lst:
             print((-1)*heapq.heappop(lst))
